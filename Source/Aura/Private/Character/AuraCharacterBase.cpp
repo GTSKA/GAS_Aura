@@ -13,6 +13,17 @@ AAuraCharacterBase::AAuraCharacterBase()
 	Weapon->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
+void AAuraCharacterBase::HighlightActor()
+{
+	
+}
+
+void AAuraCharacterBase::UnHighlightActor()
+{
+	
+
+}
+
 void AAuraCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
