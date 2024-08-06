@@ -13,15 +13,14 @@ AAuraCharacterBase::AAuraCharacterBase()
 	Weapon->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
-void AAuraCharacterBase::HighlightActor()
+UAbilitySystemComponent* AAuraCharacterBase::GetAbilitySystemComponent() const
 {
-	
+	return AbilitySystemComponent;
 }
 
-void AAuraCharacterBase::UnHighlightActor()
+UAttributeSet* AAuraCharacterBase::GetAttributeSet() const
 {
-	
-
+	return AttributeSet;
 }
 
 void AAuraCharacterBase::BeginPlay()
