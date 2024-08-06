@@ -18,7 +18,7 @@ AAuraPlayerState::AAuraPlayerState()
 
 UAbilitySystemComponent* AAuraPlayerState::GetAbilitySystemComponent() const
 {
-	return GetAbilitySystemComponent();
+	return AbilitySystemComponent;
 }
 
 UAttributeSet* AAuraPlayerState::GetAttributeSet() const
