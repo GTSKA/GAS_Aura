@@ -7,6 +7,8 @@
 #include "AbilitySystemInterface.h"
 #include "AuraCharacterBase.generated.h"
 
+class UCameraComponent;
+class USpringArmComponent;
 class UAttributeSet;
 class UAbilitySystemComponent;
 
@@ -24,6 +26,19 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category="Combat")
 	TObjectPtr<USkeletalMeshComponent> Weapon;
+
+	UPROPERTY(EditAnywhere, Category="Camera")
+	TObjectPtr<USpringArmComponent> SpringArmComponent;
+
+	UPROPERTY(EditAnywhere, Category="Camera")
+	TObjectPtr<UCameraComponent> CameraComponent;
+
+	UPROPERTY(EditDefaultsOnly, Category="Camera")
+	float SpringArmLength;
+
+	UPROPERTY(EditDefaultsOnly, Category="Camera")
+	float CameraFov;
+
 
 	UPROPERTY()
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
